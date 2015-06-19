@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Testimonial Content feature.
+ */
+
+include_once 'testimonial_content.features.inc';
