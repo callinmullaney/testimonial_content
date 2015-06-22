@@ -1,9 +1,11 @@
 name = Testimonial Content
+description = Creates a Testimonial Asset type.
 core = 7.x
-package = Features
+package = Content
 version = 7.x-1.0
 project = testimonial_content
 dependencies[] = asset
+dependencies[] = ctools
 dependencies[] = entity
 dependencies[] = features
 dependencies[] = field_group
@@ -25,4 +27,3 @@ features[field_instance][] = asset-testimonial-field_image
 features[field_instance][] = asset-testimonial-field_last_name
 features[field_instance][] = asset-testimonial-field_quote
 features[field_instance][] = asset-testimonial-field_subtitle
-features_exclude[dependencies][ctools] = ctools
