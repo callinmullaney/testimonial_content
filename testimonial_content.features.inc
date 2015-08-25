@@ -11,15 +11,24 @@ function testimonial_content_default_asset_type() {
   $items = array();
   $items['testimonial'] = entity_import('asset_type', '{
     "type" : "testimonial",
-    "name" : "Testimonial",
+    "title" : "Testimonial",
     "plural" : "Testimonials",
     "data" : {
+      "icon" : "comment",
       "path" : "admin\\/manage\\/testimonials",
       "auto_title" : 1,
-      "icon" : "comment"
+      "widget" : { "assetWidgetDisplay" : { "status" : 1 } },
+      "auto_title_pattern" : "",
+      "render_title" : 0,
+      "allow_status" : 0,
+      "usage_info" : 0,
+      "instance_info" : 0,
+      "purge" : 0,
+      "no_multiple" : 0,
+      "require_instance" : 0
     },
     "rdf_mapping" : [],
-    "public" : false
+    "public" : true
   }');
   return $items;
 }
